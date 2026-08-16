@@ -8,5 +8,5 @@ spec:
   - name: nginx
     image: nginx
     env:
-      project: roboshop
-      env: dev
+      - project: roboshop
+        env: dev 
