@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: error
+  namespace: roboshop
+spec:
+  containers:
+  - name: nginx
+    image: nginxgvjshbd
+  # - name: almalinux
+  #   image: almalinux:9
