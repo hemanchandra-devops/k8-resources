@@ -5,7 +5,8 @@ metadata:
   namespace: roboshop
 spec:
   containers:
-  - name: nginx
-    image: nginxgvjshbd
-  # - name: almalinux
-  #   image: almalinux:9
+  # - name: nginx
+  #   image: nginxgvjshbd
+  #Image Pull Error
+  - name: almalinux
+    image: almalinux:9
