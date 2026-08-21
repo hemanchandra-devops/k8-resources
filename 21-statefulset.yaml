@@ -16,7 +16,7 @@ kind: Service
 metadata:
   name: nginx-headless
 spec:
-  ClusterIp: None
+  clusterIP: None
   selector:
     purpose: stateful-set
     project: roboshop
