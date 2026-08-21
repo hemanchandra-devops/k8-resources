@@ -4,7 +4,7 @@ metadata:
   name: nginx
 spec:
   selector:
-    purpose: headless-service
+    purpose: stateful-set
     project: roboshop
   ports:
     - protocol: TCP
@@ -18,7 +18,7 @@ metadata:
 spec:
   ClusterIp: None
   selector:
-    purpose: headless-service
+    purpose: stateful-set
     project: roboshop
   ports:
     - protocol: TCP
@@ -34,11 +34,12 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: nginx
+      purpose: stateful-set
+      project: roboshop
   template:
     metadata:
-      labels:
-        app: nginx
+      purpose: stateful-set
+      project: roboshop
     spec:
       containers:
       - name: nginx
