@@ -38,8 +38,9 @@ spec:
       project: roboshop
   template:
     metadata:
-      purpose: stateful-set
-      project: roboshop
+      labels:
+        purpose: stateful-set
+        project: roboshop
     spec:
       containers:
       - name: nginx
