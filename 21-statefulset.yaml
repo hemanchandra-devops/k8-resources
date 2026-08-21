@@ -30,7 +30,7 @@ kind: StatefulSet
 metadata:
   name: web
 spec:
-  serviceName: "nginx"
+  serviceName: "nginx-headless"
   replicas: 2
   selector:
     matchLabels:
